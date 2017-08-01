@@ -1,8 +1,4 @@
-
 import java.io.File
-
-
-
 
 
 open class utils {
@@ -29,6 +25,16 @@ open class utils {
     }
 
     fun fillPair() {
+        // TODO - Use this to fill pair and to avoid Pairs
+//        var i: Int = 1;
+//        var j: Int
+//        for (i<= 1000; i++){
+//            j = i;
+//            for(j<= 1000; j++){
+//                //fill pair
+//        }
+//        }
+
         for (i in zahlA) {
             for (j in zahlB) {
                 pair.add(Pair(i, j))
@@ -47,23 +53,23 @@ open class utils {
         var j = 0
         while (i < pair.size) {
             while (j < pair.size) {
-                if(j<=i){
+                if (j <= i) {
                     j++
-                }else if (pair[i] == Pair(pair[j].second, pair[j].first)) {
+                } else if (pair[i] == Pair(pair[j].second, pair[j].first)) {
                     pair.removeAt(pair.indexOf(pair[j]))
                     size = pair.size
                     var percent: Double = (100 / full.toDouble()) * (size - 1)
                     percent = Math.floor(percent * 100) / 100
                     println("[$percent%] of lines are left.")
                     i++
-                    if(j>i){
-                        j=i+1
+                    if (j > i) {
+                        j = i + 1
                     }
                     break
                 } else if (pair[i].first == pair[i].second) {
                     i++
-                    if(j>i){
-                        j=i+1
+                    if (j > i) {
+                        j = i + 1
                     }
                     break
                 } else
