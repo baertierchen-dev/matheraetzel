@@ -1,7 +1,5 @@
 # Escape from Tarkov Controls Cheat Sheet
 
-[BEGINNER'S GUIDE - ALL CONTROLS + TIPS (Escape from Tarkov)](https://www.youtube.com/watch?v=JKRQ9_d4988)
-
 ## Controls
 
 - Hold <kbd>Shift</kbd> when zoomed in with <kbd>Mouse Right Click</kbd> to hold breath and steady aim
